@@ -41,5 +41,11 @@ create a template for your pages like:
 as long as the string on [this line](https://github.com/tycobbb/www-os/blob/62e25c6ee562ba905681bd3464f41d878236f34f/os.js#L4) 
 matches  the id of the element that should change, it will work.
 
+```js
+const kId = {
+  Page: "page",
+}
+```
+
 every time you click a link, the contents of that element will get replaced with whatever is in the new page's matching element. everything
 else, like that `persistent` element, won't (e.g. so you have have audio elements that span multiple pages, or anything else).
